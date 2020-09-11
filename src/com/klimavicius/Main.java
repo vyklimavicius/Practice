@@ -1,7 +1,11 @@
 package com.klimavicius;
 
+
+
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.sql.*;
 import java.util.*;
 
@@ -19,7 +23,28 @@ public class Main {
 //    }
     public static void main(String[] args) throws Verror {
 
+          Car vCar = new Car();
+          Car.Color blue = Car.Color.RED;
+          vCar.setColor(blue);
 
+          Method[] carMethods =  Car.class.getMethods();
+
+//          for(int i = 0; i < carMethods.length; i++){
+//              if(carMethods[i].isAnnotationPresent(ToDo.class)){
+//                  System.out.println("The annotation is active!");
+//              }
+//          }
+
+//        try {
+//            Class cls = Class.forName("Main");
+//            ClassLoader cLoader = cls.getClassLoader();
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
+          int d = 10;
+          assert d >= 0 : "d variable is not greater or equal to 0";
 //        DataBConfig newConfig = new DataBConfig();
 //        Connection myConnection = newConfig.getConnection();
 

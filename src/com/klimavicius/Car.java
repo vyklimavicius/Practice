@@ -47,6 +47,7 @@ public class Car {
         return type;
     }
 
+    @ToDo("By Vytautas Klimavicius")
     public void setType(String type) {
         this.type = type;
     }
